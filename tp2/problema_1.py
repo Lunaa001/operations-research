@@ -6,10 +6,9 @@ from simplex import simplex
 
 
 def main() -> None:
-    # El enunciado mezcla minutos disponibles con consumos expresados en horas.
-    # Se convierten las disponibilidades a horas para trabajar con una unidad comun.
+    # Se sigue la convencion de la resolucion entregada: se toman los LD tal como aparecen.
     A = np.array([[4, 8], [5, 6], [12, 8]], dtype=float)
-    b = np.array([480, 600, 540], dtype=float) / 60
+    b = np.array([480, 600, 540], dtype=float)
     resultado = simplex(np.array([100, 120], dtype=float), A, b, ["A", "B"])
     cantidades = resultado["solution"]
     uso = A @ cantidades

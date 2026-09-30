@@ -24,4 +24,4 @@ python -m pip install numpy matplotlib
 - Las variables `s1`, `s2`, etc. son holguras: recursos que quedan sin utilizar.
 - Los precios sombra indican cuánto aumenta la ganancia si aumenta en una unidad el recurso correspondiente, mientras no se salga del rango de sensibilidad.
 - Un costo reducido negativo indica que una variable no básica no conviene producir con los coeficientes actuales.
-- En el Problema 1, las disponibilidades están expresadas en minutos y se convierten a horas porque los consumos están en horas. Es una suposición necesaria porque el enunciado mezcla ambas unidades.
+- En el Problema 1 se siguen los valores del lado derecho tal como aparecen en la resolución de clase: 480, 600 y 540. Así se obtiene A = 7,5, B = 56,25 y Z = 7.500.

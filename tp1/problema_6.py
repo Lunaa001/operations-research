@@ -6,7 +6,8 @@ from scipy.optimize import linprog
 
 
 def main() -> None:
-    utilidad = np.array([10000 - 10 - 70, 8000 - 10 - 70], dtype=float)
+    # Los costos 10 y 70 corresponden a cada libra de materia prima y cada hora de mano de obra.
+    utilidad = np.array([10000 - 200 * 10 - 18 * 70, 8000 - 150 * 10 - 20 * 70], dtype=float)
     recursos = np.array([[200, 150], [18, 20]], dtype=float)
     disponibles = np.array([80000, 9000], dtype=float)
     resultado = linprog(c=-utilidad, A_ub=recursos, b_ub=disponibles, bounds=[(0, None)] * 2, method="highs-ds")

@@ -1,6 +1,6 @@
 # TP3 - Programacion entera
 
-Cada problema esta en un archivo independiente. Los tres problemas resuelven primero la relajacion lineal, agregan un corte valido cuando aparece una solucion fraccionaria y luego verifican el resultado enumerando las combinaciones enteras.
+Cada problema esta en un archivo independiente. Los Problemas 1 y 3 resuelven la relajacion lineal y agregan un corte de Gomory. En el Problema 2 la relajacion tiene un vertice alternativo entero con el mismo valor optimo, por lo que no hace falta corte.
 
 ## Ejecucion
 
